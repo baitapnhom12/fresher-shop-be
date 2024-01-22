@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Fax",
+    "content": "037 542 3151"
+    },
+    {
+    "id": 2,
+    "name": "Address",
+    "content": "219 Trung Kinh - Cau Giay"
+    },
+    {
+    "id": 3,
+    "name": "Phone Number",
+    "content": "037 673 4412"
+    },
+    {
+    "id": 4,
+    "name": "E-mail Address",
+    "content": "fresher@hybrid-technologies.com.vn"
+    }
+]

@@ -1,0 +1,46 @@
+version: "3.1"
+services:
+    php:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        container_name: fresher-shop-be
+        volumes:
+            - ./:/var/www/html
+
+    webserver:
+        image: nginx:1.19.10
+        container_name: fresher-shop-be-nginx
+        links:
+            - php:fpm
+        environment:
+            - FPM_HOST=fpm
+            - FPM_PORT=9000
+        volumes:
+            - ./:/var/www/html
+            - ./docker/nginx_conf:/etc/nginx/conf.d/
+        ports:
+            - ${APP_PORT}:80
+
+    db:
+        platform: linux/x86_64
+        image: mysql:5.7
+        container_name: fresher-shop-be-mysql-db
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+        ports:
+            - ${DB_PORT}:3306
+        volumes:
+        - ./data/mysql:/var/lib/mysql
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: fresher-shop-be-phpmyadmin
+        environment:
+            - PMA_HOST=db
+            - PMA_PORT=${DB_PORT}
+            - PMA_ARBITRARY=1
+        ports:
+            - ${PHP_MYADMIN_PORT}:80

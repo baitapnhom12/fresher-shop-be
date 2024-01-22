@@ -1,0 +1,27 @@
+[
+    {
+    "id": 1,
+    "name": "User manual",
+    "slug": "user-manual"
+    },
+    {
+    "id": 2,
+    "name": "Coupon",
+    "slug": "coupon"
+    },
+    {
+    "id": 3,
+    "name": "Black Friday",
+    "slug": "black-friday"
+    },
+    {
+    "id": 4,
+    "name": "Beautify",
+    "slug": "beautify"
+    },
+    {
+    "id": 5,
+    "name": "Perfume",
+    "slug": "perfume"
+    }
+    ]

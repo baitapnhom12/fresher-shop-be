@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "How can I cancel my order?",
+    "content": "To cancel your order, log in to your account on the website or store where you placed the order. Locate the order you wish to cancel and look for an option such as Cancel Order or Request Cancellation"
+  },
+  {
+    "id": 2,
+    "name": "How can I cancel my delayed?",
+    "content": "Your registration might be delayed due to verification processes, technical issues, manual reviews, incomplete information, or high volumes of registrations. Contact customer support for more information on the specific reason for the delay."
+  },
+  {
+    "id": 3,
+    "name": "How can I cancel my products?",
+    "content": "To buy products, you need access to a retailer or online store where the products are available. You also need a valid payment method and, if buying online, internet access and a delivery address"
+  },
+  {
+    "id": 4,
+    "name": "How can I get monney back?",
+    "content": "To get your money back for a purchase, review the stores refund policy to understand the conditions. Contact customer service with your request, providing your order details and explaining the reason for the refund"
+  }
+]

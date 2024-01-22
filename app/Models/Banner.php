@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Banner extends Model
+{
+    use HasFactory;
+
+    protected $table = 'banners';
+
+    protected $fillable = ['name'];
+
+    public function images()
+    {
+        return $this->hasMany(Image::class, 'banner_id', 'id');
+    }
+}
